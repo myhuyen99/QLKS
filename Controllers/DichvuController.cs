@@ -15,7 +15,6 @@ namespace QLKS.Controllers {
         public async Task<IActionResult> Index () {
             return View (await _context.Dichvu.ToListAsync ());
         }
-
         // GET: Dichvu/Details/5
         public async Task<IActionResult> Details (string id) {
             if (id == null) {
